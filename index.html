@@ -1,5 +1,3 @@
-Tôi đã cập nhật code để thêm đồng hồ đếm ngược 45 phút (tự động nộp bài khi hết giờ) và bổ sung phần giải thích chi tiết cho từng đáp án đúng. Các phần khác của code vẫn được giữ nguyên.
-
 ```html
 <!DOCTYPE html>
 <html lang="vi">
@@ -325,7 +323,7 @@ Tôi đã cập nhật code để thêm đồng hồ đếm ngược 45 phút (t
     <div class="quiz-container">
         <div class="progress-info">
             <span><i class="far fa-list-alt"></i> <span id="answeredCount">0</span>/30 đã chọn</span>
-            <span class="timer-display" id="timerDisplay"><i class="far fa-hourglass-half"></i> <span id="timerText">45:00</span></span>
+            <span class="timer-display" id="timerDisplay"><i class="far fa-hourglass-half"></i> <span id="timerText">15:00</span></span>
         </div>
 
         <form id="quizForm">
@@ -400,7 +398,7 @@ Tôi đã cập nhật code để thêm đồng hồ đếm ngược 45 phút (t
         let score = 0;
 
         // Timer
-        const TOTAL_SECONDS = 45 * 60; // 45 phút
+        const TOTAL_SECONDS = 15 * 60; // 15 phút
         let remainingSeconds = TOTAL_SECONDS;
         let timerInterval = null;
         let timerExpired = false;
